@@ -1,1 +1,42 @@
 
+programa
+{
+
+    funcao inicio()
+    {
+        caracter jogo [3] [3] = { {' ', ' ', ' '}, {' ', ' ', ' '}, {' ', ' ', ' '} }
+        inteiro linha = 0, coluna = 0
+        logico partida_finalizada = falso
+        enquanto(partida_finalizada == falso){
+        escreva("\nEscolha a linha: ")
+        leia(linha)
+         enquanto(linha<1 ou linha>3){
+            escreva("\nLinha digitada invalida, digite uma entre 1 e 3: ")
+            leia(linha)
+         }
+        escreva("\nEscolha a coluna: ")
+        leia(coluna)
+         enquanto(coluna<1 ou coluna>3){
+            escreva("\nColuna digitada invalida, digite uma entre 1 e 3: ")
+            leia(coluna)
+          }
+        enquanto (jogo[linha-1] [coluna-1] != ' '){
+              escreva("\nA casa ja esta preenchida, escolha outra casa")
+              escreva("\nEscolha a linha: ")
+            leia(linha)
+            escreva("\nEscolha a coluna: ")
+            leia(coluna)
+        }
+        jogo [linha-1] [coluna-1] = 'X'
+        escreva("\n   1   2   3 \n")
+        escreva("1  ", jogo[0][0], " | ", jogo[0][1], " | ", jogo[0][2], "\n")
+        escreva("   -----------\n")
+        escreva("2  ", jogo[1][0], " | ", jogo[1][1], " | ", jogo[1][2], "\n")
+        escreva("   -----------\n")
+        escreva("3  ", jogo[2][0], " | ", jogo[2][1], " | ", jogo[2][2], "\n")
+        }
+    }
+}
+﻿
+W
+w023469
