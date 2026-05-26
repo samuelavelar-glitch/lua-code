@@ -1,7 +1,15 @@
-# lua-code 1
-main.pay ()
-function
-var = life 
-life = 100
-var = demage 
-demage = 2
+function main()
+	local a = 1
+
+	--
+	local life 
+	local speed
+    local jump
+   
+	speed = 100
+    jump= 10
+	
+	print("Jogo iniciado. Velocidade atual:", speed)
+end
+
+main()
