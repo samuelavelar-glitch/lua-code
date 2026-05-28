@@ -5,7 +5,7 @@ function main()
 	local life 
 	local speed
     local jump
-   
+    
 	speed = 100
     jump= 10
 	
@@ -13,3 +13,5 @@ function main()
 end
 
 main()
+function main()
+local if keyboard
