@@ -8,7 +8,7 @@ programa
 
         
         g.iniciar_modo_grafico(verdadeiro)
-        g.definir_dimensoes_janela(219, 230)
+        g.definir_dimensoes_janela(2719, 230)
         
         
         inteiro img = g.carregar_imagem("C:\\Users\\Iftm\\Downloads\\Nova pasta\\download (4).jpg")  
