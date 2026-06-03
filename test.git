@@ -11,7 +11,9 @@ funcao listar_karts_locados(inteiro karts_locados , inteiro karts_nao_locados){
     	
     	para (karts_nao_locados=15 ; karts_nao_locados > 0  ; karts_nao_locados--){
     	}
-	}
+se{}
+
+}
 	funcao inicio()
 	{
         inteiro  karts_disponiveis , karts_nao_disponiveis
