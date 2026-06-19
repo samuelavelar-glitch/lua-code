@@ -5,7 +5,7 @@ funcao listar_karts_locados(inteiro karts_locados , inteiro karts_nao_locados){
      inteiro karts_loc , karts_nloc
      cadeia enter
      para (karts_locados=0 ; karts_locados < 15 ; karts_locados++){
-        escreva("\nkarts disponiveis são karts",karts_locados)
+        escreva("\nkarts disponiveis são os karts",karts_locados)
     	   leia(karts_loc)
      }
     	
