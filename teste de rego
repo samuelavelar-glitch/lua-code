@@ -1,0 +1,50 @@
+programa{
+inclua biblioteca Util--> u
+funcao vetor2 ()
+{
+
+      inteiro vet[12] , i=0 , j=0 , numero=0 , z=0
+      
+          para( i=0; i<12 ;i++){
+               escreva("aeanuel:\n",u.sorteia(0, 100))
+			escreva("\t")
+          para( j=0; j<12 ;j++){	
+        		escreva("\n komes\n",u.sorteia(0, 100))
+       		escreva("\t")
+        }     	
+              
+      }	  
+               escreva("\t")
+                se(i==j){
+         	     escreva("1+1 = el pepe + ",u.sorteia(0, 100))
+         	     z++
+         	     escreva("\tel pepe = " , z)
+         	     escreva("\t")
+         	        }
+                senao
+                  {
+         	   	    para( z=0; z<12 ;z++){
+	         	   	   escreva("v\n",u.sorteia(1,1))
+	         	   	   escreva("a\n",u.sorteia(2,2))
+	         	   	   escreva("i\n",u.sorteia(3,3))	
+	         	   	   escreva("s\n",u.sorteia(4,4))
+	         	   	   escreva("e\n",u.sorteia(5,5))
+	         	   	   escreva("e\n",u.sorteia(6,6))	
+         	   		
+         	       }
+	}
+	
+funcao inicio (){
+            
+            		escreva("qui djabo é isso 30 seg restantes aguarde o calculo de aura")
+            		u.aguarde(30000)
+            		vetor2()
+            		escreva("e sua aura e ==", u.sorteia(0, 100))
+
+
+
+
+
+}
+
+}
