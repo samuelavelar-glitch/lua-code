@@ -1,0 +1,65 @@
+///samuel gomes avelar q1//
+programa
+{
+	inclua biblioteca Matematica--> m
+	
+	inclua biblioteca Util--> u
+	funcao mostrar_matriz(	inteiro mat[][])
+	
+		
+	{
+		inteiro i=0 , j = 0 , r , soma = 0
+			para(i=0 ; i < 5 ; i++){
+			
+			    
+				para(j=0 ; j < 5 ; j++){
+				  mat[i][j]=0
+				     escreva("\n", mat[i][j])
+
+					
+				soma=i+j
+				
+					escreva("\t")
+				} 
+				    se(soma == 4){
+					 
+					 	r = soma+1
+					escreva("", r)
+					}
+					senao se (soma==8){
+				
+						escreva("5")
+					}
+					senao se (soma==2){
+						escreva("5")
+					}
+		  		
+					senao se (soma < 4){
+						escreva(" 0")
+			 }
+					senao se (soma > 5){
+						escreva(" 0")
+		}
+	}
+}	
+
+    
+	
+	
+	
+	funcao inicio()
+	{
+		inteiro mat[5][5], opcao = 0
+	
+			
+			
+		escreva(" dejesa escolher qual opcao")
+			leia(opcao)
+			se(opcao==-0){ 
+			}
+			senao{
+			mostrar_matriz(mat)	
+		}
+	}
+}
+////comentarios nao tive tempo pra terminar essa //
