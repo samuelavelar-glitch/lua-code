@@ -39,7 +39,7 @@ funcao inicio (){
             		escreva("qui djabo é isso 30 seg restantes aguarde o calculo de aura")
             		u.aguarde(30000)
             		vetor2()
-            		escreva("e sua aura e ==", u.sorteia(0, 100))
+            		escreva("e sua aura é muito similar==", u.sorteia(0, 100))
 
 
 
