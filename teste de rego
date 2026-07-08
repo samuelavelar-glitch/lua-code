@@ -24,12 +24,12 @@ funcao vetor2 ()
                 senao
                   {
          	   	    para( z=0; z<12 ;z++){
-	         	   	   escreva("v\n",u.sorteia(1,1))
-	         	   	   escreva("a\n",u.sorteia(2,2))
-	         	   	   escreva("i\n",u.sorteia(3,3))	
-	         	   	   escreva("s\n",u.sorteia(4,4))
-	         	   	   escreva("e\n",u.sorteia(5,5))
-	         	   	   escreva("e\n",u.sorteia(6,6))	
+	         	   	   escreva("v\n",u.sorteia(1,2))
+	         	   	   escreva("a\n",u.sorteia(2,3))
+	         	   	   escreva("i\n",u.sorteia(3,4))	
+	         	   	   escreva("s\n",u.sorteia(4,5))
+	         	   	   escreva("e\n",u.sorteia(5,6))
+	         	   	   escreva("e\n",u.sorteia(6,7))	
          	   		
          	       }
 	}
