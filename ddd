@@ -6,7 +6,7 @@ funcao  listar_karts_locados()
 logico karts_disponiveis , logico karts_nao_disponiveis
 cadeia enter
 se (karts_disponiveis = verdadeiro e karts_nao_disponiveis = falso ) {
-   escreva("karts disponiveis sao"
+   escreva("karts disponiveis sao", karts disponiveis)
  	
  }
 
