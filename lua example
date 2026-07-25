@@ -22,61 +22,21 @@ function collision()
 
 				map[x][y][z] = 0
 
+
 			end
+
 		end
+
 	end
 
 end
- main()
+main_move()
 
 
 
 
 
-
-function main()
-
-			local player = {
-				speed = 0,
-				x = 0,
-				y = 0,
-				gravity = 0,
-				jump = 0
-			}
-		
-			local UserInputService = game:GetService("UserInputService")
-			local player = game.Players.LocalPlayer
-			local character = player.Character or player.CharacterAdded:Wait()
-			local humanoid = character:WaitForChild("Humanoid")
-		
-			UserInputService.InputBegan:Connect(function(input, gameProcessed)
-		
-				if gameProcessed then
-					return
-				end
-		
-				if input.KeyCode == Enum.KeyCode.E then
-					print("Interagir")
-				end
-		
-				if input.KeyCode == Enum.KeyCode.LeftShift then
-					humanoid.WalkSpeed = 30
-				end
-		
-			end)
-		
-			UserInputService.InputEnded:Connect(function(input)
-		
-				if input.KeyCode == Enum.KeyCode.LeftShift then
-					humanoid.WalkSpeed = 16
-				end
-		
-			end)
-		
-		
-		
-	end
-local player = {
+local humaniod = {
 	speed = 0,
 	x = 0,
 	y = 0,
@@ -85,30 +45,91 @@ local player = {
 }
 
 
-		 main()
 
-			if player.speed < 15 then
-				print("walking")
-		
-			elseif player.speed > 15 then
-				player.speed = 15
-		
-			elseif player.speed == 0 then
-				print("parado")
-			end
-		
-		
-			if player.jump < 0 then
-				player.jump = player.jump - player.gravity
-		
-			elseif player.jump == 0 then
-				print("no chão")
-			end
-		
-		
-			collision()
-		
+
+if humaniod.speed < 15 then
+	humaniod.speed = 10
+
+elseif humaniod.speed > 15 then
+	humaniod.speed = 30
+
+
+elseif humaniod.speed == 0 then
+	local humaniod = {
+		speed = 0,
+		x = 0,
+		y = 0,
+		gravity = 0,
+		jump = 0
+	}
+	if 	humaniod.jump < 0 then
+		humaniod.jump = humaniod.jump - humaniod.gravity
+
+	elseif humaniod.jump == 0 then
+		print("no chão")
+	end
+
+
+	collision()
+
+
+
+	if humaniod.jump < 0 then
+		humaniod.jump = humaniod.jump - humaniod.gravity
+
+	elseif humaniod.jump == 0 then
+		print("no chão")
+	end
+end
+
+collision()
+
+
+
+
+
+function main_move1()
+
+	local humanoid = {
+		speed = 0,
+		x = 0,
+		y = 0,
+		gravity = 0,
+		jump = 0
+	}
+
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+
+		if gameProcessed then
+			return
 		end
-		
-	
-	main()
+
+		if input.KeyCode == Enum.KeyCode.E then
+			print("Interagir")
+		end
+
+		if input.KeyCode == Enum.KeyCode.LeftShift then
+			humanoid.WalkSpeed = 30
+		end
+
+	end)
+
+	UserInputService.InputEnded:Connect(function(input)
+
+		if input.KeyCode == Enum.KeyCode.LeftShift then
+			humanoid.WalkSpeed = 16
+		end
+
+	end
+
+end
+
+end		
+
+return 0
+
