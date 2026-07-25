@@ -1,26 +1,114 @@
-main.lua()
+function collision()
 
+	local x
+	local y
+	local z
 
-		player = player
- 		speed=0 
- 		x =0 
- 		y =0 
-		gravity = 0 
-		jump = 0 
-		land = 0 	
-		if speed <0 then 
-			speed = speed - 1 
-		end 
-		else if speed >0 then 
-			speed = speed + 1 
-		end 
-		else speed == 0 then 
+	local mapWidth = 10
+	local mapHeight = 10
+
+	local map = {}
+
+	-- cria o mapa
+	for x = 1, mapWidth do
+
+		map[x] = {}
+
+		for y = 1, mapHeight do
+
+			map[x][y] = {}
+
+			for z = 1, mapWidth do
+
+				map[x][y][z] = 0
+
+			end
+		end
 	end
-		jump <0 then 
-	jump = gravity + 1 
-	end 
-		else if speed >0 then 
-				speed = speed + 1 
-					end 
-					else speed == 0 then 
+
+end
+ main()
+
+
+
+
+
+
+function main()
+
+			local player = {
+				speed = 0,
+				x = 0,
+				y = 0,
+				gravity = 0,
+				jump = 0
+			}
+		
+			local UserInputService = game:GetService("UserInputService")
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+			local humanoid = character:WaitForChild("Humanoid")
+		
+			UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		
+				if gameProcessed then
+					return
 				end
+		
+				if input.KeyCode == Enum.KeyCode.E then
+					print("Interagir")
+				end
+		
+				if input.KeyCode == Enum.KeyCode.LeftShift then
+					humanoid.WalkSpeed = 30
+				end
+		
+			end)
+		
+			UserInputService.InputEnded:Connect(function(input)
+		
+				if input.KeyCode == Enum.KeyCode.LeftShift then
+					humanoid.WalkSpeed = 16
+				end
+		
+			end)
+		
+		
+		
+	end
+local player = {
+	speed = 0,
+	x = 0,
+	y = 0,
+	gravity = 0,
+	jump = 0
+}
+
+
+		 main()
+
+			if player.speed < 15 then
+				print("walking")
+		
+			elseif player.speed > 15 then
+				player.speed = 15
+		
+			elseif player.speed == 0 then
+				print("parado")
+			end
+		
+		
+			if player.jump < 0 then
+				player.jump = player.jump - player.gravity
+		
+			elseif player.jump == 0 then
+				print("no chão")
+			end
+		
+		
+			collision()
+		
+		end
+		
+	
+	main()
